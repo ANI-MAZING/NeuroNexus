@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Form</h1>
+    <form action="">
+        <div class="first-row">
+            <div class="row-item">
+                <label for="name">Name</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label for="contact">Contact</label>
+                <input type="tel" name="phone" pattern="[0-9]{10}" required>
+            </div class="row-item">
+        </div>
+        <div class="second-row">
+        <label for="address">Address</label>
+        <textarea name="address" id=""></textarea>
+        </div>
+        <div class="third-row">
+            <div class="row-item">
+            <label for="cName">Company</label>
+            <input type="text">
+            </div>
+            <div class="row-item">
+            <label for="email">Email</label>
+            <input type="email">
+            </div>
+        </div>
+        <div class="fourth-row">
+            <div class="row-item">
+        <label for="department">Department</label>
+        <select name="" id="">
+            <option value="">Options</option>
+            <option value="">HR</option>
+            <option value="">Sales</option>
+            <option value="">Development</option>
+            <option value="">Marketing</option>
+            <option value="">Other</option>
+        </select>
+            </div>
+            <div class="row-item">
+        <label for="">Gender</label>
+        <select name="" id="">
+            <option value="">Options</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Other</option>
+        </select>
+            </div>
+    </div>
+    <button class="contactButton">
+        Submit
+        <div class="iconButton">
+          <svg
+            height="24"
+            width="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+      </button>
+    </form>
+    </div>
+</body>
+</html>

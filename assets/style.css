@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url('/assets/Spectral.jpg');
+
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      overflow: hidden;
+    }
+  
+      .container {
+        margin: 50px auto;
+        padding: 30px 40px;
+        border-radius: 16px;
+        background: rgba(0, 0, 0, 0); 
+
+        box-shadow: 0 8px 32px rgba(189, 185, 185, 0.329);
+        backdrop-filter: blur(50px); /* blur the background behind it */
+        -webkit-backdrop-filter: blur(50px); /* for Safari */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* subtle inner border */
+        width: 100%;
+        max-width: 600px;
+      }
+  
+      .first-row, .third-row, .fourth-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .row-item {
+        width: 50%;
+      }
+
+      h1 {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 34px;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* consistent spacing between blocks */
+      }
+      
+      form label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 500;
+        color: #e9e4e479;
+      }
+      
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      select,
+      textarea {
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+        background-color: #2e2a2a5e;
+        padding: 10px 14px;
+        border: 1px solid #8181818f;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: border-color 0.3s ease;
+        box-sizing: border-box;
+        margin-bottom: 0; /* remove bottom margin, use flex gap instead */
+        color: #e9e9e9c4;
+
+      }
+
+       select {
+        color: #e9e9e9c4;
+      }
+
+      option {
+        background-color: #181616b9;
+      }
+      
+      textarea {
+        resize: vertical;
+        min-height: 50px;
+        max-height: 100px;
+      }
+      
+      .first-row,
+      .third-row,
+      .fourth-row {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+      }
+      
+      .row-item {
+        flex: 1; /* equally split width */
+        display: flex;
+        flex-direction: column;
+      }
+      
+/* From Uiverse.io by d4niz */ 
+.contactButton {
+  background-color: #243dca;
+  
+  width: 25%;
+  color: #ffffff;
+  font-family: inherit;
+  padding: 0.45em;
+  padding-left: 1em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3em;
+}
+
+.iconButton {
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #2e2a2a5e;
+  background-color: #243dca;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.contactButton:hover {
+  background-color: #2e2a2a5e;
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #243dca;
+}
+
+.contactButton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em #243dca;
+}
+
+
+
+
+      @media (max-width: 768px) {
+        body {
+          padding: 20px;
+          background-position: center;
+          background-size: cover;
+        }
+      
+        .container {
+          padding: 20px;
+          margin: 20px auto;
+          width: 100%;
+        }
+      
+        .first-row,
+        .third-row,
+        .fourth-row {
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        .row-item {
+            width: 100%;
+        }
+      
+        h1 {
+          font-size: 28px;
+        }
+      
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        select,
+        textarea {
+          font-size: 16px;
+          padding: 12px;
+        }
+      
+        button {
+          padding: 14px;
+          font-size: 18px;
+        }
+      }
